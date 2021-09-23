@@ -1,3 +1,5 @@
+[![crates.io](https://img.shields.io/crates/v/cfg_table.svg)](https://crates.io/crates/cfg_table)
+
 # ✨ `cfg_table`
 
 A simple macro that expands to different values across compilation targets.
