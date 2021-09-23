@@ -7,4 +7,4 @@ license = "MIT"
 repository = "https://github.com/WilliamVenner/cfg_table"
 description = "A simple macro that expands to different values across compilation targets"
 categories = ["development-tools", "development-tools::ffi", "development-tools::build-utils"]
-keywords = ["cfg", "table", "macro", "conditional-compilation", "utility"]
+keywords = ["cfg", "table", "macro", "utility"]
