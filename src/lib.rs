@@ -94,16 +94,3 @@ macro_rules! cfg_table {
 		}
 	}
 }
-
-#[inline]
-pub fn is_alive(ent: *mut std::ffi::c_void) -> bool {
-	// string search for Alive, breakpoint + step into engine func
-	#[allow(non_upper_case_globals)]
-	const m_iLifeState: usize = cfg_table! {
-		win64 => 352,
-		win32 => 228,
-		linux64 => 392,
-		linux32 => 248
-	};
-	unsafe { *(((ent as usize) + m_iLifeState) as *mut u8) == 0 }
-}
